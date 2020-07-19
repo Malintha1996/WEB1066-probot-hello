@@ -37,6 +37,14 @@ describe('My Probot app', () => {
     expect(github.issues.createComment).toHaveBeenCalled()
   })
 })
+const checkRunCompletedPayload = require('./fixtures/check_run.completed.json')
+test('process check_run completed event', async () => {
+  // Simulates delivery of an issues.opened webhook
+  await app.receive({
+    name: 'check_suite.completed',
+    payload: checkRunCompletedPayload
+  })
+})
 
 // For more information about testing with Jest see:
 // https://facebook.github.io/jest/

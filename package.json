@@ -1,6 +1,6 @@
 {
   "name": "probot-hello",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Probot app",
   "author": "Edward Raigosa <wenlock@github.com>",
   "license": "ISC",
@@ -25,7 +25,9 @@
     "heroku": "^7.42.3",
     "probot": "^7.0.0",
     "run": "^1.4.0",
-    "travis-cli": "^1.0.9"
+    "travis-cli": "^1.0.9",
+    "prom-client":"^12.0.0",
+    "express":"^4.17.1"
   },
   "devDependencies": {
     "jsdom": "11.11.0",
@@ -41,5 +43,8 @@
     "env": [
       "jest"
     ]
+  },
+  "jest":{
+    "testEnvironment":"node"
   }
 }

@@ -44,6 +44,7 @@
       "jest"
     ]
   },
+  
   "jest":{
     "testEnvironment":"node"
   }
